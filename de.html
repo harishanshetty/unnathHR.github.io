@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<title>NATYA KALA NIVAS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="boostrap.css"> 
+<link rel="stylesheet" href="bootstrap.min.css">
+<script src="jquery.js"></script>
+<script src="jquery-2.1.3.min.js"></script>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidenav to 120px */
+.w3-sidenav {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidenav (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<script>
+jQuery(document).ready(function($){
+$(window).load(function(){
+$("#more").hide();
+$("#less").hide();
+});
+$("#read").click(function(){
+$("#read").hide();
+$("#less").show();
+$("#more").show();
+});
+$("#less").click(function(){
+$("#read").show();
+$("#less").hide();
+$("#more").hide();
+});
+});
+</script>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidenav - hidden on small screens) -->
+<nav class="w3-sidenav w3-center w3-small w3-hide-small">
+  <!-- Avatar image in top left corner -->
+  <img src="unnatha.jpg" style="width:100%">
+  <a class="w3-padding-large w3-black" href="#">
+  <a class="w3-padding-large w3-black" href="#">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a class="w3-padding-large w3-hover-black" href="#about">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a class="w3-padding-large w3-hover-black" href="#photos">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>GALLERY</p>
+  </a>
+  <a class="w3-padding-large w3-hover-black" href="#events">
+    <i class="fa fa-calendar w3-xxlarge"></i>
+    <p>EVENTS</p>
+  </a>
+  <a class="w3-padding-large w3-hover-black" href="#contact">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <ul class="w3-navbar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <li class="w3-left" style="width:25% !important"><a href="#">HOME</a></li>
+    <li class="w3-left" style="width:25% !important"><a href="#about">ABOUT</a></li>
+    <li class="w3-left" style="width:25% !important"><a href="#photos">GALLARY</a></li>
+	<li class="w3-left" style="width:25% !important"><a href="#contact">EVENTS</a></li>
+    <li class="w3-left" style="width:25% !important"><a href="#contact">CONTACT</a></li>
+  </ul>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">NATYA KALA NIVAS</span></h1>
+   
+    <img src="home.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">ABOUT</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+   <h2>Unnath H.R</h2>Unnath H.R, son of Mr. H.B Rathnaraju and Jayapadma and the disciple of  Vidhusi Ambale Rahjeshwari, is a well known name in the field of dance in India and Abroad.
+   He is a post graduate in both Dance and English Literature, Vidwath in dance (professional graduate in Dance from the Karnataka State Board)  and has been presented on stage
+   in the major cities of India as well as in the U.S., Russia, Belarus, Malaysia and Thailand, and made his Sri Lanka debut to great acclaim in 2016. Unnath has won many
+   prestigious awards and titles such as  “Ekalabya Sanman” in 2009 from Orissa, “Natya Koustuba” in 2009, from Andhra Pradesh, “Abhinaya Nrutya Koumudhi” in 2010,
+   from Andhra Pradesh, “Natraj Gopi Krishana Samman” in 2010, from Mumbai, Maharashtra, “Kalamandir Puruskaram”in 2013 at Peravoor, Kerala and  “Natya Mayooram” for the
+   best performance in 2014, April, Bhilai, Chattisghar.  He stood “First Best Season Performer” of India in 2012, Pune. </p> 
+   
+   <p>Unnath is an ‘A’ grade Artist at Dooradarshan (Indian Government headed Television channel).  Has directed many dance ballets, and choreographed various dance repertory 
+   in Bharathanatyam, specializing in the Mysore school, and folk styles. He is the Principal and Artistic Director of Natyakala Nivas, which was awarded the best culture revival
+   centre for 2014, Travel Puruskar, from Maldives arts Council and GCC,  Karnataka.  He is training more than 150 students,  and serves as the Managing Trustee for
+   “Rathnakala Padma Kuteera Trust”.  The credit of choreographing  thousands of students  for Republic Day and Independence Day from past 3 years goes to Unnath. 
+   Today he has crossed training more than 20,000 school students.  Unnath is a member of esteemed group Prayathnam, classical dance exponents based in Chennai.
+   <a id="read">...read more</a> </p>
+
+   <div id="more">
+
+<p >
+
+<h3 class="w3-text-sand">Major Projects and Dance Festivals. </h3><br>
+⦁	Hampi Utsav, Hampi,Karnataka.<br>
+⦁	Hoysala Utsav, Halebedu and Belur, Karnataka<br>
+⦁	Natarani, Darpana Dance Festival, Ahmedabad, Gujarat<br>
+⦁	Uttarayan at Delhi, IIT Kharagpur (WB), Kolkata.<br>
+⦁	Natraj Gopi Krishan Dance Festival, Mumbai<br>
+⦁	Ekalabya festival, Bhubhaneswar, Orissa.<br>
+⦁	Nitya Nrutya, Bangalore, Karnataka.<br>
+⦁	Nrithyanruthyati 3rd Edition, Bhilai, Chattisghar.<br>
+⦁	Natraj Dance Festival, Nrutya Kala Parishat, Bangalore<br>
+⦁	ICCR, Friday Events, Bangalore<br>
+⦁	Kannada and Culture Programs at Mysore, Bangalore, Hassan.<br>
+⦁	Abhinaya Nrutya Festival, Elooru, Andhra Pradesh.<br>
+⦁	Peravoor Vaibhava, Peravoor, Kerala<br>
+⦁	Rasa Samaroha, IIT Kharagpur, West Bengal.<br>
+⦁	Sringeri Sabha, Sringeeri<br>
+⦁	Nrutya Parishat, Godhavari,Andhra Pradesh<br>
+⦁	Noopra Festival, Bangalore.<br>
+⦁	Hoysala Sambrama, Hassan.<br>
+⦁	Nrutya Edition 5, Mysore.<br>
+⦁	Shravana, Bijapur<br>
+⦁	Shankara Festival, Shankara Foundation , Bangalore.<br>
+⦁	Ratyatra, Julan etc., at various religious sites including Dharamsala, Moodabidre, Kalasa, Sulya, Puttooru,Shravanabelagola, Tumkur, Bijapur, Belguam, Hubli,etc., <br>
+⦁	UNG programs at Russia and Belarus.<br>
+⦁	  Workshop at Woman’s University , Bijapur with Bharatiya Vidya Bhavan, Bangalore. <br>
+⦁	South zone Cultural center performances at Eloor, Andhra Pradesh.<br>
+⦁	ICCR every Friday program at Yavanika, Bangalore<br>
+
+Ensembled with various dance troupes and companies, such as Nadam  of Bangalore, Sahaj Padma of West Bengal,  Invocation Dance Company Malaysia, Shankara Dance Ensemble Bangalore, Nrutya Dance Company, Bangalore, Noopura Dance School, Bangalore.  Prasiddha Foundation, New Delhi.   Shanaka foundation , Bangalore. 
+
+<h3 class="w3-text-sand">INTERNATIONAL PROGRAMS AND WORKSHOPS:</h3>
+
+⦁	Battery Dance Festival 2016, NEW YORK, USA at Robert F. Wagner Park  and Schimmel Center of Arts, PACE University.<br>
+⦁	Battery Dance Company 40th Anniversary 2016 New York, USA.<br>
+⦁	Incredible India 2016 , Huston, Texas, USA at Miller open air theater.<br>
+⦁	Indian Culture Heritage Foundation, Dallas, Texas, USA at Dallas City Performance Hall.<br>
+⦁	Ganga Production at Temple of Fine Arts, Kuala Lampur , Malaysia.<br>
+⦁	Workshop for SARA Knight Ballet school, NYC, USA.<br>
+⦁	Workshop at Irving school, NYC, USA<br>
+⦁	Workshop at Dallas, Asiatic Society of USA.<br>
+⦁	Workshop for Army Band, Colombo , SRILANKA<br>
+⦁	Workshop for Dancers guiled, Colombo SRILANKA<br>
+⦁	Workshop for Chanadana Dancers Colombo SRILANKA<br>
+⦁	Performance for Rabi Chaya , St. Xavier’s Auditorium , Colombo SRILANKA January 2016.<br>
+⦁	Performance for ICCR, Colombo , SRILANKA.<br>
+⦁	Provincetown dance festival Massachusetts, U.S.<br>
+⦁	U.S. Embassy program at Kandy, Sri Lanka, Grand college Auditorium <br>
+⦁	 Drums and Dance December 2016, st. Xavier’s Auditorium College auditorium.<br>
+
+
+<h3 class="w3-text-sand">Script, Music and Choreographies.</h3>
+
+Major Highlights  are, Dashamaha Vidya ( 10 forms of shakti)<br>
+Asta Lakshmi (8 forms of laskhmi)<br>
+Soma, the survivor (folk based )<br>
+Dasaavataram (10 incarnation of lord Vishnu)<br>
+Punyakoti (Folk based)<br>
+Shiavaasta, classical production<br>
+Sri Krishna Tatva Darshana<br>
+Bhakthi, gnana and viraagya a philosophical adoration to the bhakthi movement<br>
+Smrithi Namana 2014 (shasanokta mahileyaru)<br>
+Prathisthe 2014<br>
+Shasana Namana<br>
+
+</p>
+<a id="less"> read less</a>
+    </p>
+	</div>
+   <!-- 
+ <!-- Portfolio Section 
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">GALLARY</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+     Grid for photos 
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="1.jpg" style="width:100%">
+        <img src="2.jpg" style="width:100%">
+        <img src="3.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="4.jpg" style="width:100%">
+        <img src="5.jpg" style="width:100%">
+        <img src="6.jpg" style="width:100%">
+        <img src=".jpg" style="width:100%">
+      </div>
+    <!-- End photo grid 
+    </div>
+  <!-- End Portfolio Section
+  </div> 
+  -->
+  
+  <div class="w3-main w3-black" id="photos" style="margin-center:100%">
+     
+	 <!-- Push down content on small screens -->
+  <div class="w3-hide-medium" style="margin-top:60px">
+  <h2 class="w3-text-light-grey">GALLERY</h2>
+  
+
+ <!-- Slideshow Header -->
+  <div class="w3-container" id="gallery" style="overflow-y:hidden">
+
+   
+    <div class="w3-display-container mySlides">
+    <img src="2.jpg" style="width:80%;    margin: 0px 65px;">
+      <div class="w3-display-bottomleft w3-container w3-black">
+     </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img src="3.jpg" style="width:80%;    margin: 0px 65px;">
+      <div class="w3-display-bottomleft w3-container w3-black">
+    </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img src="6.jpg" style="width:80%;    margin: 0px 65px;">
+      <div class="w3-display-bottomleft w3-container w3-black">
+      </div>
+    </div>
+	 <div class="w3-display-container mySlides">
+    <img src="9.jpg" style="width:80%;    margin: 0px 65px;">
+      <div class="w3-display-bottomleft w3-container w3-black">
+    </div>
+    </div>
+	<div class="w3-display-container mySlides">
+    <img src="7.jpg" style="width:80%;    margin: 0px 65px;">
+      <div class="w3-display-bottomleft w3-container w3-black">
+    </div>
+    </div>
+	<div class="w3-display-container mySlides">
+    <img src="4.jpg" style="width:80%;    margin: 0px 65px;">
+      <div class="w3-display-bottomleft w3-container w3-black">
+     </div>
+    </div>
+  
+  <div class="w3-row-padding w3-section">
+    
+    <div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="6.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="">
+    </div>
+	<div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="9.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="">
+    </div>
+	<div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="7.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)" title="">
+    </div>
+	<div class="w3-col s2">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="4.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(6)" title="">
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  
+  <script>
+// Script to open and close sidenav when on tablets and phones
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Slideshow Images
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+  
+  
+  
+  <!--event session -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="events">
+    <h2 class="w3-text-light-grey">EVENTS</h2>
+    <hr style="width:200px" class="w3-opacity">
+	
+	<p>AS FESTIVAL AND EVENT ORGANISER :    <br>
+
+PAST PRODUCTIONS :<br>
+<p>
+
+IN COLLABURATION WITH HERITAGE GROUP:  INDIAN ART FESTIVLA AT HOYSALA RESORT.<br>
+
+ARTS FESTIVAL FROM NKN AND RKPKT WITH KANNADA AND CULTURE<br></p>
+
+<h4 class="t1">⦁	NRUTYA MILINDA :</h4>  The festival aims in meeting the international standards for Indian performing arts, inviting professional artists from various parts of India. 
+ Its an annual festival.<br>
+
+<h4 class="t1">⦁	SUPRAJAVATH :</h4> A festival for budding Children.  As the name say, Suprajavath literally means A group of Children.  It’s a 6 monthly program.   Concentrates on developing 
+skills among children by providing bigger platforms.<br>
+
+<h4 class="t1">⦁	  MASIKA :</h4>  A monthly festival for local or native artists , which invites arts from Hassan District.  It includes forms such as Light Music, Hindusthani and Carnatic Music,
+ Classical Dance forms, fine arts, etc.,<br>
+
+<h4 class="t1">⦁	TRIMASIKA :</h4>  Literally means a 3 monthly program for state level performers.  Trimasika provides platforms for traditional dance and music.   Festival focuses on
+ state level performers, allowing the performers to come with their creative piece or own choreographies.<br>
+
+<h4 class="t1">⦁	NKN FORUM :</h4>  Is a forum for mentally abused arts.  Forum provides performance opportunities for artists coming from various background. <br>
+
+<h3>AIMS FOR THE COMING YEARS :</h3><br>
+⦁	To create a forum of psychiatry , psychology with doctors ,councilors and arts to over come the basic child problems such as Asperger’s  syndrome, Autism , Bipolar disorders,
+ Dyslexia etc., <br>
+⦁	Aims to organize school programs to cultivate balanced , social and  freedom education .<br>
+
+	</p>
+	</div>
+  
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Hassan,India</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 – 9964695381</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: unnath.jain@gmail.com/ natyakalanivas@gmail.com</p>
+    
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+   <a href="https://facebook.com/unnathhassanrathnaraju " target="_blank">
+   <i class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
+   <a href="https://www.snapchat.com" target="_blank"> <i class="fa fa-snapchat w3-hover-text-yellow"></i></a>
+    <a href="https://in.pinterest.com" target="_blank"><i class="fa fa-pinterest-p w3-hover-text-red"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter w3-hover-text-light-blue"></i></a>
+    <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
+    <p class="w3-medium"><a href="" target="_blank" class="w3-hover-text-green"></a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+
+
+</div>
+
+</body>
+</html>
